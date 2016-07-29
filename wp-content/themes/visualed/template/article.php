@@ -89,7 +89,7 @@ get_header();
 						if($i%2!=0)
 						{
 					?>
-                        <a class="pull-left">
+                        <a href="<?php the_permalink();?>" class="pull-left">
                             <div class="article_lft">
                                 <div class="article_img_mn">
                                     <div class="artcle_img" style="background-image:url('<?php echo $src[0]; ?>')"> </div>
@@ -102,9 +102,9 @@ get_header();
                                     <!--h5>ARTICLES</h5-->
                                     <div class="title_artcl">
                                         <h2 class="pull-left"><?php the_title();?></h2>
-                                        <!--<i class="pull-right">Read More</i>-->
+                                        <i class="pull-right">Read More</i>
                                     </div>
-                                    <strong><?php the_content();?></strong>
+                                    <strong><?php echo wp_trim_words( get_the_content(), 30, '....' );?></strong>
 
 
                                 </div>
@@ -115,21 +115,21 @@ get_header();
 						  else
 						{
 					?>
-							<a class="pull-right">
+							<a href="<?php the_permalink();?>" class="pull-right">
 								<div class="article_lft">
 									<div class="article_img_mn">
 										<div class="artcle_img" style="background-image:url('<?php echo $src[0]; ?>')"> </div>
 										<div class="hover-effect">
-											<strong><?php the_time('F j');?> , 2016</strong>
+											<strong><?php the_time('F j');?> , <?php the_time('Y');?></strong>
 										</div>
 									</div>
 									<div class="article_info">
 										<!--h5>ARTICLES</h5-->
 										<div class="title_artcl">
 											<h2 class="pull-left"><?php the_title();?></h2>
-											<!--<i class="pull-right">Read More</i>-->
+											<i class="pull-right">Read More</i>
 											</div>
-										<strong><?php the_content();?></strong>
+										<strong><?php echo wp_trim_words( get_the_content(), 30, '....' );?></strong>
 
 
 									</div>

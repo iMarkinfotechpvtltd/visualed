@@ -23,6 +23,8 @@
 <?php
 	if ( is_front_page() ) {
 ?>
+
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/polygon.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.slimscroll.min.js"></script>
@@ -89,12 +91,16 @@
 	</script>
 
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/css3-animate-it.js"></script>
+		 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/particles.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/particles_polygon.js"></script>
 <?php
 }
 	else
 {
 ?>
 	<?php wp_footer();?>
+	
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/particles.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>-->
 	  <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/mCustomScrollbarconcatmin.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/lightbox-plus-jquery.min.js"></script>
@@ -107,7 +113,9 @@
 	<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/custom.js"></script>
 	 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/particles.min.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/particles_inner.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5lightbox.js"></script>
 	
+
   
 	
 <?php

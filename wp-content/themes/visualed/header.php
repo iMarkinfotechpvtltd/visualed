@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/animations-ie-fix.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/animations.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/lightbox.min.css">
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/particles.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/scroll_custom.css">
 <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 	<?php
@@ -121,6 +120,14 @@
 </head>
 <?php
 if(is_page('spot-it'))
+{
+?>
+	<body class="conatct_us hdr_cng join_us">
+<?php
+}
+?>
+<?php
+if(is_singular('post'))
 {
 ?>
 	<body class="conatct_us hdr_cng join_us">

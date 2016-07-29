@@ -19,11 +19,6 @@ get_header();
 	<!---------START GETTING DATA FROM CUSTOM FIELD WHO WE ARE---------------------->
                         <h1><?php the_field('who_we_are_title',8);?></h1>
                         <?php the_field('who_we_are_content',8);?>
-                        <ul id="sidebar" class="banner_nav">
-                            <li><a class="active" href="#service">Our services</a></li>
-                            <li><a href="#team">Our team</a></li>
-                            <li><a href="#process">Our process</a></li>
-                        </ul>
                     </div>
                 </div>
 	<!---------END OF GETTING DATA FROM CUSTOM FIELD WHO WE ARE---------------------->
@@ -61,20 +56,20 @@ get_header();
                     <ul>
 		<!---------START GETTING DATA FROM CUSTOM POST PROCESS---------------------->	
 					<?php
-						// $args = array('post_type' => 'our_process',
-									 // 'posts_per_page' => -1,
-									 // 'order' => 'ASC');
-							// $loop = new WP_Query( $args );
-							// while ( $loop->have_posts() ) : $loop->the_post();
+						 $args = array('post_type' => 'our_process',
+									  'posts_per_page' => -1,
+									  'order' => 'ASC');
+							 $loop = new WP_Query( $args );
+							 while ( $loop->have_posts() ) : $loop->the_post();
 					?>
-                        <!--<li>
+                        <li>
                             <div class="cntn_lft text-center">
-                                <div class="img_process"><?php //the_post_thumbnail();?></div>
-                                <strong><?php //the_title();?></strong>
+                                <div class="img_process"><?php the_post_thumbnail();?></div>
+                                <strong><?php the_title();?></strong>
                             </div>
-                        </li>-->
+                        </li>
 					<?php
-						//endwhile;
+						endwhile;
 					?>
         <!---------END OF GETTING DATA FROM CUSTOM POST PROCESS---------------------->	                
                     </ul>
@@ -84,18 +79,28 @@ get_header();
     </div>
 
 
-	<!---------START GETTING DATA FROM CUSTOM FIELD COMPANY HISTORY---------------------->
+	<!---------START GETTING DATA FROM CUSTOM FIELD OUR TEAM---------------------->
 	<?php
 		$service=get_post_meta(8,"company_history_image",true);
 		$thumb = wp_get_attachment_image_src($service, 'history_img' );
 	?>
     <div class="history_cont display_block animatedParent" style="background-image:url('<?php echo $url = $thumb['0'];?>')" data-appear-top-offset='-150' id="team">
+		<div class="video_about">
+		
+				<video poster="http://visualed.imarkclients.com/wp-content/themes/visualed/images/header_banner.jpg" muted="" loop="" autoplay="" class="">
+					
+                    <source type="video/webm" src="<?php the_field("our_team_video",8);?>"></source>
+                    <source type="video/mp4" src="<?php the_field("our_team_video",8);?>"></source>
+                </video>
+		
+		</div>
         <div class="container ">
+	
             <div class="history_cntnt animated fadeInUp">
-                <h2><?php the_field('company_history_title',8);?></h2>
-                <p><?php the_field('company_history_content',8);?></p>
+                <h2><?php the_field('our_team_title',8);?></h2>
+                <p><?php the_field('our_team_content',8);?></p>
             </div>
-	<!---------END OF GETTING DATA FROM CUSTOM FIELD COMPANY HISTORY---------------------->
+	<!---------END OF GETTING DATA FROM CUSTOM FIELD OUR TEAM---------------------->
         </div>
 
     </div>

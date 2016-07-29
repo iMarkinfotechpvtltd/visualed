@@ -55,12 +55,6 @@ get_header();
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                     </div>
-
-
-                    <!--div class="upper_contact ">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus generators. Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words.
-                        </p>
-                    </div-->
                     <div class="contact_info display_block">
                         <ul>
                             <li>

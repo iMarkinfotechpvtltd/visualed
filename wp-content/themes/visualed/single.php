@@ -7,48 +7,81 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header();
+global $post; ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+    <div class="padding-top">
+        <div class="blog_page animatedParent">
+            <div class="container">
+                <div class="row">
+                    <div class="animated fadeInLeft">
+                        <div class="blog_lft col-sm-8">
+                            <div class="blog_bx">
+                                <!--div class="blog_date">
+                                <div class="blog_date_innr">
+                                    <span>18 <br> Apr</span>
+                                </div>
+                            </div-->
+							<?php while (have_posts()) : the_post();?>
+                                <div class="blog_cntnt">
+                                    <div class="blog_img">
+                                        <?php the_post_thumbnail();?>
+                                    </div>
+                                    <div class="blog_descp">
+                                        <h2><?php the_title();?></h2>
+                                        <ul>
+                                            <li><a title="" href="#"><i aria-hidden="true" class="fa fa-user"></i><?php the_author();?></a></li>
+                                            <li><a title="" href="#"><i aria-hidden="true" class="fa fa-calendar"></i><?php the_time('j F Y');?></a></li>
+                                        </ul>
+                                        <p><?php the_content();?></p>
+                                    </div>
+                                </div>
+								<?php
+								endwhile;?>
+                            </div>
 
-			// Include the single post content template.
-			get_template_part( 'template-parts/content', 'single' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) {
-				comments_template();
-			}
 
-			if ( is_singular( 'attachment' ) ) {
-				// Parent post navigation.
-				the_post_navigation( array(
-					'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'twentysixteen' ),
-				) );
-			} elseif ( is_singular( 'post' ) ) {
-				// Previous/next post navigation.
-				the_post_navigation( array(
-					'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentysixteen' ) . '</span> ' .
-						'<span class="screen-reader-text">' . __( 'Next post:', 'twentysixteen' ) . '</span> ' .
-						'<span class="post-title">%title</span>',
-					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentysixteen' ) . '</span> ' .
-						'<span class="screen-reader-text">' . __( 'Previous post:', 'twentysixteen' ) . '</span> ' .
-						'<span class="post-title">%title</span>',
-				) );
-			}
+                        </div>
 
-			// End of the loop.
-		endwhile;
-		?>
+                    </div>
+                    <div class="animated fadeInRight">
+                        <div class="recent_post col-sm-4">
+                            <div class="recent_post">
+                                <h2>Recent Posts</h2>
+                                <ul>
+											<?php
+												  $args = array('post_type'      => 'post',
+												  'posts_per_page' => 4,
+												  'order'          => 'DESC'
+												  );
+												$loop = new WP_Query( $args );
+												while ( $loop->have_posts() ) : $loop->the_post();
+											?>
+                                    <li>
+                                        <div class="post_sec">
+                                            <div class="post_thumb">
+                                                <a title="" href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+                                            </div>
+                                            <div class="post_cntnt">
+                                                <h4><?php the_time('j F Y');?></h4>
+                                                <p><a title="" href="<?php the_permalink();?>"><?php the_title();?></a></p>
+                                            </div>
+                                        </div>
+                                    </li>
+									<?php
+									endwhile;
+									?>
+                                </ul>
+                            </div>
 
-	</main><!-- .site-main -->
+                        </div>
+                    </div>
 
-	<?php get_sidebar( 'content-bottom' ); ?>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+    <?php //get_sidebar(); ?>
+        <?php get_footer(); ?>

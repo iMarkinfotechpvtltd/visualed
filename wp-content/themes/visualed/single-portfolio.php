@@ -27,6 +27,12 @@ return $matches[0];
                 <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/video/Architectural%203D%20Animation%20Showreel%20-%20Cubic%20Meter%20studio.mp4" type="video/webm">
                 <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/video/Architectural%203D%20Animation%20Showreel%20-%20Cubic%20Meter%20studio.mp4" type="video/mp4">
             </video>
+			<div class="watch_video">
+                        <a href="http://visualed.imarkclients.com/wp-content/themes/visualed/video/Architectural%203D%20Animation%20Showreel%20-%20Cubic%20Meter%20studio.mp4" class="html5lightbox">
+                            Watch the Video
+                        </a>
+						
+             </div>   
         </div>
 		<?php while ( have_posts() ) : the_post();?>
         <div class="inner_port_cont animatedParent">
@@ -67,9 +73,6 @@ return $matches[0];
                     <li class="col-sm-4 padding animated fadeInUp">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -81,9 +84,6 @@ return $matches[0];
                     <li class="col-sm-4 padding animated fadeInUp">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -95,9 +95,6 @@ return $matches[0];
                     <li class="col-sm-4 padding animated fadeInUp">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -113,9 +110,6 @@ return $matches[0];
                     <li class="col-sm-12 padding animated fadeInUpShort">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -131,9 +125,6 @@ return $matches[0];
                     <li class="col-sm-4 padding animated fadeInLeftShort">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -145,9 +136,6 @@ return $matches[0];
                     <li class="col-sm-4 padding animated fadeInUpShort">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -159,9 +147,6 @@ return $matches[0];
                     <li class="col-sm-4 padding animated fadeInRightShort">
                         <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid3.jpg" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -177,9 +162,6 @@ return $matches[0];
                     <li class="col-sm-6 padding animated fadeInLeftShort">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -191,9 +173,6 @@ return $matches[0];
                     <li class="col-sm-6 padding animated fadeInRightShort">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>
@@ -209,9 +188,6 @@ return $matches[0];
                     <li class="col-sm-12 padding animated fadeInUpShort">
                         <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
-                            <!--div class="hover-effect">
-                                <strong>James Richardson's new store</strong>
-                            </div-->
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
                     </li>

@@ -36,3 +36,6 @@
 [13-Jul-2016 03:56:31 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/imarkclients/public_html/visualed/wp-content/themes/visualed/template/home.php on line 11
 [13-Jul-2016 03:56:32 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/imarkclients/public_html/visualed/wp-content/themes/visualed/template/home.php on line 11
 [13-Jul-2016 05:36:45 UTC] PHP Fatal error:  Call to undefined function is_category_name() in /home/imarkclients/public_html/visualed/wp-content/themes/visualed/header.php on line 127
+[27-Jul-2016 07:04:04 UTC] PHP Fatal error:  Call to undefined function the_thumbnail() in /home/imarkclients/public_html/visualed/wp-content/themes/visualed/single.php on line 16
+[27-Jul-2016 07:04:44 UTC] PHP Fatal error:  Call to undefined function the_thumbnail() in /home/imarkclients/public_html/visualed/wp-content/themes/visualed/single.php on line 16
+[28-Jul-2016 12:37:27 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/imarkclients/public_html/visualed/wp-content/themes/visualed/template/article.php on line 107

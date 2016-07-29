@@ -17,6 +17,12 @@ return $matches[0];
 	?>
  <div class="content_header contact_banner cont_page animatedParent" style="background-image:url(<?php echo $url;?>)">
         <div class="inner_banner_cntct  animated fadeInDown">
+		<div class="video_join">
+		<video poster="http://visualed.imarkclients.com/wp-content/themes/visualed/images/header_banner.jpg" muted="" loop="" autoplay="" class="">
+					
+                    <source type="video/webm" src="<?php the_field("joinus_banner_video",14);?>"></source>
+                    <source type="video/mp4" src="<?php the_field("joinus_banner_video",14);?>"></source>
+         </video></div>
             <div class="container">
                 <div class="display_table">
                     <div class="upper_contn text-center">

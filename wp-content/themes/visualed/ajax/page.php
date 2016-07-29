@@ -34,7 +34,7 @@ query_posts( array (  'post_type' => 'post', 'order'=> 'DESC','posts_per_page'=>
                                 <div class="article_img_mn">
                                     <div class="artcle_img" style="background-image:url('<?php echo $src[0]; ?>')"> </div>
                                     <div class="hover-effect">
-                                        <strong>May 12<sup>TH</sup> , 2016</strong>
+                                        <strong><?php the_time('F j');?> , <?php the_time('Y');?></strong>
                                     </div>
                                 </div>
 
@@ -60,7 +60,7 @@ query_posts( array (  'post_type' => 'post', 'order'=> 'DESC','posts_per_page'=>
 									<div class="article_img_mn">
 										<div class="artcle_img" style="background-image:url('<?php echo $src[0]; ?>')"> </div>
 										<div class="hover-effect">
-											<strong>June 12<sup>TH</sup> , 2016</strong>
+											<strong><?php the_time('F j');?> , <?php the_time('Y');?></strong>
 										</div>
 									</div>
 									<div class="article_info">
