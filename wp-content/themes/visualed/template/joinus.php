@@ -168,15 +168,7 @@ return $matches[0];
                     <div class="form_contact">
 					
 					<?php echo do_shortcode( '[contact-form-7 id="116" title="contact form 2"]' ); ?>
-                        <!--<form>
-                            <input type="text" placeholder="NAME">
-                            <input type="text" placeholder="E-MAIL">
-                            <input type="text" placeholder="PHONE">
-                            <input type="file" class="filestyle" data-input="false">
-                            <div class="conatct_button">
-                                <button class="custom bg_transparent" type="button">Submit</button>
-                            </div>
-                        </form>-->
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>

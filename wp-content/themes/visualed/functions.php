@@ -434,6 +434,7 @@ add_image_size( 'process_img', 1920, 843, true );
 add_image_size( 'contact_banner_img', 1920, 459, true );
 add_image_size( 'join_img', 822, 460, true );
 add_image_size( 'opening_image', 1920, 669, true );
+add_image_size( 'portfolio_inner_image', 646, 531, true );
 /* End of Adding image Size */
 
 /*******Start of Custom post process *******/

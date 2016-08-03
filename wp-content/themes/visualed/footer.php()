@@ -2,9 +2,9 @@
         <div class="container animatedParent">
             <div class="social_icons ">
                 <ul>
-                    <li class="animated fadeInLeftShort"><a href="<?php the_field("linkedin",4)?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="<?php the_field("twitter",4)?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="animated fadeInRightShort "><a href="<?php the_field("youtube",4)?>" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li class="animated fadeInLeftShort"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="animated fadeInRightShort "><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                 </ul>
             </div>	
 
@@ -35,7 +35,7 @@
 		jQuery(document).ready(function () {
             jQuery('#fullpage').fullpage({
                 verticalCentered: true,
-                anchors: ['technology', 'who-we-are', 'what-we-do', 'how-we-do-it', 'portfolio', 'team'],
+                anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7'],
                 scrollBar: true,
                 easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
                 scrollOverflow: false,
@@ -51,7 +51,7 @@
 		jQuery(document).ready(function () {
             jQuery('#fullpage').fullpage({
                 verticalCentered: true,
-                anchors: ['technology', 'who-we-are', 'what-we-do', 'how-we-do-it', 'portfolio', 'team'],
+                anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7'],
 				responsiveHeight: 10000,
                 scrollBar: true,
                 easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',

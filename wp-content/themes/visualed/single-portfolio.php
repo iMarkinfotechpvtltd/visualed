@@ -13,6 +13,7 @@
 
  */
 	get_header();
+	global $post;
 ?>
 <?php
 function get_numerics ($str) 
@@ -21,31 +22,35 @@ preg_match_all('/\d+/', $str, $matches);
 return $matches[0];
 }
 ?>
+<?php while ( have_posts() ) : the_post();?>
     <div class="temptorary_container display_block">
         <div class="video_portfolio">
             <video class="" autoplay loop muted poster="images/header_banner.jpg">
-                <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/video/Architectural%203D%20Animation%20Showreel%20-%20Cubic%20Meter%20studio.mp4" type="video/webm">
-                <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/video/Architectural%203D%20Animation%20Showreel%20-%20Cubic%20Meter%20studio.mp4" type="video/mp4">
+                <source src="<?php the_field("portfolio_inner_video",$post->ID);?>" type="video/webm">
+                <source src="<?php the_field("portfolio_inner_video",$post->ID);?>" type="video/mp4">
             </video>
 			<div class="watch_video">
-                        <a href="http://visualed.imarkclients.com/wp-content/themes/visualed/video/Architectural%203D%20Animation%20Showreel%20-%20Cubic%20Meter%20studio.mp4" class="html5lightbox">
+                        <a href="<?php the_field("prtfolio_inner_full_video",$post->ID);?>" class="html5lightbox">
                             Watch the Video
                         </a>
 						
              </div>   
         </div>
-		<?php while ( have_posts() ) : the_post();?>
         <div class="inner_port_cont animatedParent">
             <div class="container">
                 <div class="row">
                     <div class="inner_portfolio">
                         <div class="col-sm-6 animated fadeInLeftShort">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/inner_port.jpg" alt="">
+						<?php
+						$disc=get_post_meta($post->ID,"portfolio_inner_port_image",true);
+						$thumb = wp_get_attachment_image_src($disc, 'portfolio_inner_image' );
+						?>
+                            <img src="<?php echo $url = $thumb[0];?>" alt="">
                         </div>
                         <div class="col-sm-6 animated fadeInRightShort">
                             <h2><?php the_title();?></h2>
                             <div class="inner_para display_block">
-                              <?php echo wp_trim_words( get_the_content(), 150, '' );?>
+                              <p><?php echo wp_trim_words( get_the_content(), 150, '' );?></p>
                             </div>
                         </div>
                     </div>
@@ -145,7 +150,7 @@ return $matches[0];
 				{
 				?>
                     <li class="col-sm-4 padding animated fadeInRightShort">
-                        <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid3.jpg" data-lightbox="example-set">
+                        <a href="<?php echo $small_image_url1[0];?>" data-lightbox="example-set">
                             <div class="img_hover" style="background-image:url(<?php echo $small_image_url1[0];?>)"></div>
                             <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </a>
@@ -259,5 +264,11 @@ return $matches[0];
 
         }
     </script>
+	<script>
+	jQuery(document).ready(function(){
+		jQuery('#menu-item-19').addClass('current-menu-item');
+	});
+	
+</script>
 <?php get_footer();
 ?>

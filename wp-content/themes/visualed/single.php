@@ -48,7 +48,7 @@ global $post; ?>
                     <div class="animated fadeInRight">
                         <div class="recent_post col-sm-4">
                             <div class="recent_post">
-                                <h2>Recent Posts</h2>
+                                <h2><?php the_field("recent_post",10);?></h2>
                                 <ul>
 											<?php
 												  $args = array('post_type'      => 'post',
@@ -61,7 +61,7 @@ global $post; ?>
                                     <li>
                                         <div class="post_sec">
                                             <div class="post_thumb">
-                                                <a title="" href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+                                                <a title="" href="<?php the_permalink();?>"><?php the_post_thumbnail(array(83,60));?></a>
                                             </div>
                                             <div class="post_cntnt">
                                                 <h4><?php the_time('j F Y');?></h4>
@@ -82,6 +82,11 @@ global $post; ?>
             </div>
         </div>
     </div>
-
+<script>
+	jQuery(document).ready(function(){
+		jQuery('#menu-item-20').addClass('current-menu-item');
+	});
+	
+</script>
     <?php //get_sidebar(); ?>
         <?php get_footer(); ?>

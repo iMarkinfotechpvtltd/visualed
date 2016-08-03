@@ -120,9 +120,6 @@ td {
     vertical-align: baseline;
 }
 
-body {
-    background: #f1f1f1;
-}
 
 article,
 aside,
@@ -2526,11 +2523,7 @@ p > video {
         margin-left: 29.4118%;
         width: 70.5882%;
     }
-    body {
-        font-size: 15px;
-        font-size: 1.5rem;
-        line-height: 1.6;
-    }
+
     p,
     address,
     pre,
@@ -3375,12 +3368,7 @@ p > video {
  */
 
 @media print {
-    body {
-        background: none !important;
-        /* Brute force since user agents all print differently. */
-        
-        font-size: 11.25pt;
-    }
+ 
     .secondary-toggle,
     .navigation,
     .page-links,

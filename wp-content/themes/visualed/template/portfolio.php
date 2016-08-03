@@ -9,7 +9,7 @@ get_header();
         <div id="particles-js"></div>
         <div class="inner_banner_cntct portfolio_animatn  animated fadeIn">
             <div class="upper_contn text-center">
-                <h1>Portfolio</h1>
+                <h1><?php the_field("portfolio_banner_title",12); ?></h1>
                 <!--ul>
                             <li><a class="active" href="">LED Screens</a></li>
                             <li><a href="">LED Screens</a></li>

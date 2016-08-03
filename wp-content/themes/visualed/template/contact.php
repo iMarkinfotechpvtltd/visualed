@@ -39,7 +39,6 @@ get_header();
                             <h4 class="map_heading"><?php the_field('afex_park',6);?></h4>
                         </div>
                         <div class="map-iframe" style="display:block;">
-                            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.5744702707993!2d34.9662473146891!3d32.10778452511365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d30c142e66321%3A0xe616e824b91652eb!2sAfek+industrial+park!5e0!3m2!1sen!2sin!4v1465033818846" frameborder="0" style="border:0" allowfullscreen></iframe>-->
 							<?php 
 								$location = get_field('map');	
 								if( !empty($location) ):	
