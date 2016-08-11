@@ -34,7 +34,7 @@ get_header();
                             <p><?php $summary = get_field('who_we_are_content',4);
 							 echo substr($summary, 0, 451);
 							?></p>				
-                            <a class="custom bg_white" href="<?php echo get_permalink(8);?>">Read More</a>
+                            <a class="custom bg_white" href="<?php echo get_permalink(8);?>"><?php the_field('read_more_button',4);?></a>
                         </div>
                         <div class="col-sm-7 pull-right animated fadeInRightShort img_who">								<?php									$service=get_post_meta(4,"who_we_are_image",true);									$thumb = wp_get_attachment_image_src($service, 'who_img' );									?>
                             <img src="<?php echo $url = $thumb['0'];?>" alt="banner"> </div>				<!---------END OF GETTING DATA FROM CUSTOM FIELD WHO WE ARE---------------------->
@@ -101,7 +101,6 @@ get_header();
                                 <h2 class=""><?php $summary = get_field('how_we_do_title',4);
 								echo substr($summary, 0, 464);?>
 								</h2>
-                                <!--p>The studio team is made up of expert animators and graphic designers who are continually working on advertising and atmosphere content, video art, special simulations, 3D content, cellular content, digital signage planing and design, and much more. The studio specializes in unique projects such as pixel perfect content and projects beyond conventional proportions. The studio's client base is a testament to the professional recognition it receives.</p-->
                             </div>
                         </div>
                     </div>
@@ -125,7 +124,7 @@ get_header();
                     <div class="animatedParent" data-appear-top-offset='-200'>
                         <div class="col-sm-12 text-center inner_project">
                             <h2 class="animated fadeInDownShort"><?php the_field('projects_',4);?></h2>
-                            <a class="custom animated fadeInUpShort" href="<?php echo get_permalink(12);?>">View all projects</a>			<!--------------END OF GETTING DATA FROM CUSTOM FIELD PROJECT---------------------->
+                            <a class="custom animated fadeInUpShort" href="<?php echo get_permalink(12);?>"><?php the_field('portfolio_button',4);?></a>			<!--------------END OF GETTING DATA FROM CUSTOM FIELD PROJECT---------------------->
                         </div>
                     </div>
                 </div>
@@ -139,7 +138,7 @@ get_header();
                         <h2 class=""><?php the_field('join_our_team_title',4);?></h2>
                         <p><?php $summary =get_field('join_our_team_content',4);
 									echo substr($summary, 0, 450);?></p>
-                        <a class="custom bg" href="<?php echo get_permalink(6);?>">Contact us</a>		<!---------END OF GETTING DATA FROM CUSTOM FIELD JOIN OUR TEAM---------------------->
+                        <a class="custom bg" href="<?php echo get_permalink(6);?>"><?php the_field('contact_us_button',4);?></a>		<!---------END OF GETTING DATA FROM CUSTOM FIELD JOIN OUR TEAM---------------------->
                     </div>
                     </div>
                 </div>

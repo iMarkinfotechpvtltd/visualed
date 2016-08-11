@@ -25,7 +25,7 @@ get_header();
             </div>
         </div>
     </div>
-
+<div id="scnd_scrl">
     <div class="video_play display_block" id="service">
         <!--div class="image_video">
             <img src="<?php //echo esc_url( get_template_directory_uri() ); ?>/images/watch_video.jpg" alt="">
@@ -103,6 +103,7 @@ get_header();
 	<!---------END OF GETTING DATA FROM CUSTOM FIELD OUR TEAM---------------------->
         </div>
 
+    </div>
     </div>
 
 <?php

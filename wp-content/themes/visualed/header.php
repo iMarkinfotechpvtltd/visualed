@@ -183,7 +183,7 @@ if(is_singular('portfolio'))
                             <a href="<?php echo site_url();?>" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png)">
                             </a>
                         </div>
-                        <div class="col-sm-7 navigation">
+                        <div class="col-sm-8 navigation">
                             <nav>
                                 <ul>
 									<?php 

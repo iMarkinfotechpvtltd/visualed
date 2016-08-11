@@ -5,10 +5,10 @@
         var config = $.extend({
             headerSelector: 'header',
             navSelector: '.content_header',
-            contentSelector: '#process',
-            footerSelector: 'footer',
+            contentSelector: '#scnd_scrl',
+            footerSelector: '.btm-liv',
             sidebarTopMargin: 20,
-            footerThreshold: 40
+            footerThreshold: 0
         }, options);
 
         var fixSidebr = function () {
